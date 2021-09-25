@@ -24,6 +24,8 @@ import { ContactComponent } from './contact/contact.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { LoginComponent } from './login/login.component';
+import { DishService } from './services/dish.service';
+import { FooterComponent } from './footer/footer.component';
 
 const routes: Routes = [
   { path: 'home',  component: HomeComponent },
@@ -41,7 +43,8 @@ const routes: Routes = [
     HomeComponent,
     ContactComponent,
     HeaderComponent,
-    LoginComponent
+    LoginComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -66,7 +69,7 @@ const routes: Routes = [
   entryComponents: [
     LoginComponent
   ],
-  providers: [],
+  providers: [DishService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
