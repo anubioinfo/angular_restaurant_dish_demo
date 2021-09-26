@@ -1,9 +1,9 @@
 <mat-toolbar color="primary"> <span>Anurag</span>
-    <a mat-button routerLink='/home'>Home</a>
-    <a mat-button routerLink='/contact'>Contact</a>
-    <a mat-button routerLink='/menu'>Menu</a>
+    <a mat-button routerLink='/home' routerLinkActive="active">Home</a>
+    <a mat-button routerLink='/contact' routerLinkActive="active">Contact</a>
+    <a mat-button routerLink='/menu' routerLinkActive="active">Menu</a>
     <span class="flex-spacer"></span>
-    <a mat-button (click)="openLoginForm()"><span class="fa fa-sign-in fa-lg"></span> Login</a>
+    <a mat-button (click)="openLoginForm()" routerLinkActive="active"><span class="fa fa-sign-in fa-lg"></span> Login</a>
    </mat-toolbar>
 
    <div class="container jumbotron"
