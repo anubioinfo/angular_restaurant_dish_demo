@@ -26,6 +26,9 @@ import { HeaderComponent } from './header/header.component';
 import { LoginComponent } from './login/login.component';
 import { DishService } from './services/dish.service';
 import { FooterComponent } from './footer/footer.component';
+import { MatSelectModule } from '@angular/material/select';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { ReactiveFormsModule } from '@angular/forms';
 
 const routes: Routes = [
   { path: 'home',  component: HomeComponent },
@@ -61,7 +64,10 @@ const routes: Routes = [
     MatFormFieldModule, 
     MatInputModule,
     MatCheckboxModule,
+    MatSelectModule,
+    MatSlideToggleModule,
     FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(
       routes,
       { enableTracing: true } // <-- debugging purposes only
